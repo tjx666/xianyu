@@ -1,3 +1,3 @@
 export default {
-    currentNavTab: '咸鱼'
+    tabPage: '咸鱼'
 }

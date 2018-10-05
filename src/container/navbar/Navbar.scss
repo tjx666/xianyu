@@ -1,9 +1,9 @@
-.container {
+.navbar {
     width: 100%;
-    min-height: 60px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(90, 160, 218);
+    background-color: #FFF;
 }

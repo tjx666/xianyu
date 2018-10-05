@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import style from './Content.scss';
+import './Content.scss';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Home from '../home/Home';
 
 export default class Content extends Component {
-  render() {
-    return (
-      <div className={style.container}>
-        这是内容部分
-      </div>
-    )
-  }
+    render() {
+        return (
+            <main className="content">
+                <Switch>
+                    <Route
+                        path='/index'
+                        component={Home}
+                    />
+                    <Redirect
+                        to="/index"
+                    />
+                </Switch>
+            </main>
+        )
+    }
 }

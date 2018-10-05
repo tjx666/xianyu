@@ -15,9 +15,7 @@ const handleResetNavTab = navTab => {
     return DEFAULT_TAB_PAGE;
 }
 
-export default {
-    ...handleActions({
-        [switchTabPage]: handleSwitchNavbar,
-        [resetTabPage]: handleResetNavTab,
-    }, DEFAULT_TAB_PAGE)
-}
+export default  handleActions({
+    [switchTabPage]: handleSwitchNavbar,
+    [resetTabPage]: handleResetNavTab,
+}, DEFAULT_TAB_PAGE);
