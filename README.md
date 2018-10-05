@@ -9,5 +9,6 @@
 5. axios
 6. sass
 7. iconFont
-8. create-react-app脚手架
-9. ...
+8. async/await
+9. create-react-app脚手架
+10. ...

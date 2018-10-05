@@ -1,6 +1,5 @@
 import './Navbar.scss';
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import NavTab from '../navTab/NavTab';
 
 class Navbar extends Component {
@@ -58,13 +57,6 @@ class Navbar extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
 
-});
-
-const mapDispatchToProps = {
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+export default Navbar;
 

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { switchTabPage } from '../../actions/tabPage'
 import { NavLink } from 'react-router-dom';
 import IconFont from '../../components/iconFont/IconFont';
 import './NavTab.scss';
@@ -27,7 +25,6 @@ class NavTab extends Component {
     
 
     handleSwitchTab = event => {
-        this.props.switchTabPage(this.props.navText);
         if (!this.state.isSelected) {
             this.setState({
                 isSelected: true,
@@ -50,14 +47,5 @@ class NavTab extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
 
-})
-
-const mapDispatchToProps = {
-    switchTabPage
-}
-
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(NavTab);
+export default NavTab;

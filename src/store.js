@@ -1,3 +1,5 @@
 export default {
-    tabPage: '咸鱼'
+    appInfo: {
+        
+    }
 }
