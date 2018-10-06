@@ -13,4 +13,4 @@
 9. create-react-app脚手架
 10. ...
 
-!(进度)[https://github.com/tjx666/xianyu/blob/master/screenShot/progress.png?raw=true]
+![进度](https://github.com/tjx666/xianyu/blob/master/screenShot/progress.png?raw=true)
