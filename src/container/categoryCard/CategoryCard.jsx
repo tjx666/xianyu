@@ -54,6 +54,7 @@ export default class CategoryCard extends Component {
     
     _renderCategoryList = __ => this.state.categoryItems.map(item => (
         <CategoryCardItem
+            key={item.category}
             iconType={item.iconType}
             category={item.category}
         />

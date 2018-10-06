@@ -2,22 +2,45 @@
     width: 50%;
     height: 50%;
     display: flex;
-
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    
     .item1-left {
         height: 100%;
         flex: 1;
         
         .item1-title-container {
+            height: 50%;
             display: flex;
+            align-items: flex-end;
 
             .item1-title {
-                font-weight: weight;
-
+                margin-right: 5px;
+                font-size: .9em;
+                font-weight: bolder;
             }
 
-            .item1-subtitle {
-                color: #999;
+            .item1-introduction {
+                font-size: .6em;
+                border-radius: 3px;
+                padding: 0 .2em;
+                margin-bottom: 3px;
+                letter-spacing: normal;
+                color: #FFF;
             }
         }
+
+        .item1-subtitle {
+            font-size: .7em;
+            color: #999;
+        }
+    }
+
+    .item1-right {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
     }
 }

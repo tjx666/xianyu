@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HomeHeader from '../../components/homeHeader/HomeHeader';
 import CategoryCard from '../categoryCard/CategoryCard';
-import NvaCard1, { NavCard1 } from '../navCard1/NavCard1';
+import NavCard1 from '../navCard1/NavCard1';
 import './Home.scss'
 
 export default class Home extends Component {

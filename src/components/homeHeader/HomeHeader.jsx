@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import IconFont from '../iconFont/IconFont';
-import PoolSearchBox from '../poolSearchBox/PoolSearchBox';
 import './HomeHeader.scss';
 
 export default class HomeHeader extends Component {
