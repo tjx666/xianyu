@@ -1,0 +1,23 @@
+.nav-card1-item {
+    width: 50%;
+    height: 50%;
+    display: flex;
+
+    .item1-left {
+        height: 100%;
+        flex: 1;
+        
+        .item1-title-container {
+            display: flex;
+
+            .item1-title {
+                font-weight: weight;
+
+            }
+
+            .item1-subtitle {
+                color: #999;
+            }
+        }
+    }
+}

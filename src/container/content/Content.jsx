@@ -6,7 +6,7 @@ import Home from '../home/Home';
 export default class Content extends Component {
     render() {
         return (
-            <main className="content">
+            <div className="content">
                 <Switch>
                     <Route
                         path='/index'
@@ -16,7 +16,7 @@ export default class Content extends Component {
                         to="/index"
                     />
                 </Switch>
-            </main>
+            </div>
         )
     }
 }

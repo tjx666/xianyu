@@ -1,0 +1,19 @@
+.category-card-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        font-size: 2em;
+        margin-bottom: 6px;
+    }
+
+    .icon-text {
+        color: gray;
+        font-size: .7em;
+        letter-spacing: .1em;
+    }
+}

@@ -10,6 +10,7 @@ export default class HomeHeader extends Component {
                 <span className="text-loge">咸鱼</span>
                 <div className="home-search-box">
                     <IconFont iconType="#icon-search" />
+                    <span className="hot-search">外套男</span>
                 </div>
                 <IconFont className="scan-code-icon" iconType="#icon-saoma" />
             </header>

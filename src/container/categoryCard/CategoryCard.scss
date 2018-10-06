@@ -1,6 +1,10 @@
 .category-card {
     width: 90vw;
-    height: 200px;
+    height: 168px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
     border-radius: 10px;
     background-color: #fff;
     margin-top: 10px;

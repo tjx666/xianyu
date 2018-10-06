@@ -12,31 +12,48 @@ class Navbar extends Component {
                     iconType: 'shouye',
                     selectedIconType: 'shouye1',
                     navText: "咸鱼",
-                    navLink: '/index'
+                    navLink: '/index',
+                    isSelected: true,
                 },
                 {
                     iconType: 'dayongchi',
                     selectedIconType: 'dayongchi1',
                     navText: "鱼塘",
-                    navLink: '/pool'
+                    navLink: '/pool',
+                    isSelected: false,
                 },
                 {
                     iconType: 'xiaoxi1',
                     selectedIconType: 'xiaoxi',
                     navText: "消息",
-                    navLink: '/message'
+                    navLink: '/message',
+                    isSelected: false,
                 },
                 {
                     iconType: 'geren',
                     selectedIconType: 'iconzhengli-',
                     navText: "我的",
-                    navLink: '/self'
+                    navLink: '/self',
+                    isSelected: false,
                 },
             ]
         }
     }
 
+    handleSelect = (navText, event) => {
+        for (const tab of this.state.navTabs) {
+            if (tab.navText === navText) {
+                if (tab.isSelected) return;
+                tab.isSelected = true;
+            } else {
+                if (tab.isSelected) tab.isSelected = false;
+            }
+        }
 
+        this.setState({
+            navTabs: this.state.navTabs,
+        });
+    }
 
     _renderTabs = __ => this.state.navTabs.map(tab => (
         <NavTab
@@ -45,6 +62,8 @@ class Navbar extends Component {
             selectedIconType={tab.selectedIconType}
             navText={tab.navText}
             navLink={tab.navLink}
+            isSelected={tab.isSelected}
+            onSelect={this.handleSelect}
         />
     ))
 
