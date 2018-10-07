@@ -1,0 +1,34 @@
+.nav-card2 {
+    width: 90vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    .card2-header {
+        width: fill-available;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .card2-title {
+            font-size: 1em;
+        }
+
+        .card2-introduction {
+            color: #666;
+            font-size: .7em;
+
+            .latest-publish-count {
+                font-weight: bold;
+                color: #000;
+            }
+        }
+    }
+}
