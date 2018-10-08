@@ -1,0 +1,32 @@
+.nav-card2-item {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    background-color: rgb(255, 244, 243);
+    padding: 0 8px;
+
+    .item2-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .item2-icon {
+            font-size: 1em;
+            margin-right: .1em;
+        }
+
+        .item2-title {
+            font-size: 1em;
+
+        }
+    }
+
+    .item2-subtitle {
+        font-size: .8em;
+        color: #999;
+    }
+}
