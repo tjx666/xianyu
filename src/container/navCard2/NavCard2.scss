@@ -11,7 +11,7 @@
     background-color: #fff;
 
     .card2-header {
-        width: fill-available;
+        width: stretch;
         height: 45px;
         display: flex;
         justify-content: space-between;
@@ -33,7 +33,7 @@
     }
 
     .card2-items {
-        width: fill-available;
+        width: stretch;
         display: flex;
         justify-content: space-between;
     }
