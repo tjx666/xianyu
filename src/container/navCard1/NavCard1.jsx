@@ -41,15 +41,12 @@ export class NavCard1 extends Component {
     }
 
     _renderItems = __ => {
-        let isBottomBorder = true;
+        let isBottomBorder = false;
         let isRightBorder = false;
-        let counter = 0;
         return this.state.navItems.map((item, index) => {
-            if (counter === 2) {
+            if (index / 2 === 0) {
                 isBottomBorder = !isBottomBorder;
-                counter = 0;
             }
-            counter++;
             isRightBorder = !isRightBorder;
             return (
                 <NavCard1Item
