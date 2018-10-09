@@ -29,7 +29,6 @@ export class categoryNavTab extends Component {
     _setWidth = __ => {
         const tabDOM = this.refs.categoryNavTab;
         this.props.setTabWidth(this.props.category, tabDOM.clientWidth);
-        console.log({ category: this.props.category, width: tabDOM.clientWidth});
     }
 
     render() {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CategoryNavTab from '../categoryNavTab/categoryNavTab';
-import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import './CategoryNavBar.scss'
 
@@ -74,7 +73,7 @@ export class CategoryNavBar extends Component {
     }
 
     handleSelect = (category) => {
-        let currentCategoryIndex;
+        let currentCategoryIndex = this.state.currentCategoryIndex;
         this.state.categoryTabs.forEach((tab, index) => {
             if (tab.isSelected && tab.category === category) return;
             if (tab.category === category) {
@@ -105,16 +104,18 @@ export class CategoryNavBar extends Component {
                 categoryNavbarLeft += tabs[index].width;
                 categoryNavbarLeft += this.state.tabMarginX * 2;
             }
-            console.log({ selectedTabIndex, categoryNavbarLeft });
+            console.log({
+                selectedTabIndex,
+            });
             categoryNavbarLeft = categoryNavbarLeft + tabs[selectedTabIndex].width / 2 | 0;
-            console.log({ selectedTabIndex, categoryNavbarLeft });
 
             // 如果选中标签中心距离最导航栏最左侧大于一半屏幕宽度要将选中元素居中
             if (categoryNavbarLeft >  halfWindowWidth) {
                 let scrollLeft = this.state.scrollLeft;
                 scrollLeft = categoryNavbarLeft - this.state.halfWindowWidth - scrollLeft;
-                console.log({ scrollLeft, categoryNavbarLeft });
                 this.refs.categoryNavBar.scrollLeft = scrollLeft;
+            } else {
+                this.refs.categoryNavBar.scrollLeft = 0;
             }
         }
     }

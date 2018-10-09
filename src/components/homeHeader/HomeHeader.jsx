@@ -6,7 +6,7 @@ export default class HomeHeader extends Component {
     render() {
         return (
             <header className="home-header">
-                <span className="text-loge">咸鱼</span>
+                <span className="text-loge">闲鱼</span>
                 <div className="home-search-box">
                     <IconFont iconType="#icon-search" />
                     <span className="hot-search">外套男</span>

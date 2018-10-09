@@ -1,5 +1,9 @@
-.product-list {
+.product-list-container {
     width: 100%;
-    height: 700px;
-    background-color: rgb(224, 224, 195);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgb(236, 234, 234);
 }
