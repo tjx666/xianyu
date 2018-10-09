@@ -3,9 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 10px;
+    margin: 0 10px;
     color: #999;
-    font-size: .9em;
+    font-size: .8em;
+}
+
+.category-nav-tab:nth-child(1) {
+    margin-left: 0px;
+}
+
+.category-nav-tab:nth-last-child(1) {
+    padding-right: 15px;
 }
 
 .selected-nav-tab {

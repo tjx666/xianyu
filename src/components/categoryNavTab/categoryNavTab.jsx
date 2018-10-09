@@ -7,22 +7,37 @@ export class categoryNavTab extends Component {
         isSelected: PropTypes.bool.isRequired,
         category: PropTypes.string.isRequired,
         onSelect: PropTypes.func.isRequired,
+        setTabWidth: PropTypes.func.isRequired,
     }
 
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            
-        }
+    handleClick = (event) => {
+        const clientX = event.clientX;
+        const offsetX = event.offsetX;
+        this.props.onSelect(this.props.category, clientX, offsetX);
     }
 
+    componentDidMount() {
+        this._setWidth();
+    }
+
+    componentDidUpdate() {
+        this._setWidth();
+    }
+
+
+    _setWidth = __ => {
+        const tabDOM = this.refs.categoryNavTab;
+        this.props.setTabWidth(this.props.category, tabDOM.clientWidth);
+        console.log({ category: this.props.category, width: tabDOM.clientWidth});
+    }
 
     render() {
         return (
-            <div 
-                className={ `category-nav-tab ${this.props.isSelected ? 'selected-nav-tab' : ''}`}
-                onClick={this.props.onSelect}
+            <div
+                className={`category-nav-tab ${this.props.isSelected ? 'selected-nav-tab' : ''}`}
+                ref="categoryNavTab"
+                onClick={this.handleClick}
             >
                 {this.props.category}
             </div>

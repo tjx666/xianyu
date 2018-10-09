@@ -1,5 +1,13 @@
 .category-navbar {
     width: 100%;
+    position: relative;
     display: flex;
+    padding: 0 15px;
+    box-sizing: border-box;
     overflow-x: scroll;
+    transition: left 1s ease-in-out;
+}
+
+.category-navbar::-webkit-scrollbar {
+    display: none;
 }
