@@ -1,5 +1,9 @@
 # 面向对象课程设计仿咸鱼app界面部分
 
+## 进度:
+
+![进度:](https://github.com/tjx666/xianyu/blob/master/screenShot/progress.png?raw=true)
+
 ## 使用到的技术和工具包括
 
 1. react
@@ -12,6 +16,3 @@
 8. async/await
 9. create-react-app脚手架
 10. ...
-
-### 进度:
-![进度:](https://github.com/tjx666/xianyu/blob/master/screenShot/progress.png?raw=true)

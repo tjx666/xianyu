@@ -1,0 +1,20 @@
+.search-pool-box {
+    width: 90vw;
+    height: 30px;
+    margin: 10px 0;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 30px;
+
+    .search-icon {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .placeholder {
+        font-size: .9em;
+        color: #666;
+    }
+}
