@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Product from '../../components/product/Product';
 import './ProductList.scss';
 
@@ -128,7 +127,6 @@ export class ProductList extends Component {
             ]
         }
     }
-
 
     _renderProductList =  productList => productList.map(product => (
         <Product

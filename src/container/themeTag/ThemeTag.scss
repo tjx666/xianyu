@@ -1,0 +1,40 @@
+.theme-tag-container {
+    width: fit-content;
+    height: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .tag-left {
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 7px;
+        border-bottom-right-radius: 0;
+        background-color: #F0F;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+
+        .tag-sharp {
+            font-weight: 1000;
+        }
+    }
+
+    .tag-right {
+        width: 20px;
+        height: 100%;
+        border-bottom-left-radius: 7px;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .tag-right-bottom {
+            width: 20px;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #F0F;
+           z-index: 0;
+        }
+}

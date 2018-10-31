@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PoolSectionHeader from '../../components/poolSectionHeader/PoolSectionHeader';
+import ThemeTag from '../themeTag/ThemeTag';
 import './HotTheme.scss';
 
 export class HotTheme extends Component {
@@ -7,9 +8,11 @@ export class HotTheme extends Component {
         return (
             <div className="hot-theme">
                 <PoolSectionHeader
-                    iconType=""
+                    iconType="#icon-icon-test"
+                    sectionTitle="热门主题"
+                    iconColor="red"
                 />
-                这是热门主题部分
+                <ThemeTag theme={'收藏图'}/>
             </div>
         )
     }

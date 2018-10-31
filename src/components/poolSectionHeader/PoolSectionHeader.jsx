@@ -7,13 +7,14 @@ export class PoolSectionHeader extends Component {
     static propTypes = {
         iconType: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
+        iconColor: PropTypes.string.isRequired,
     }
 
     render() {
         return (
             <div className="pool-section-header">
                 <span>-</span>
-                <IconFont classNam="section-icon" iconType={this.props.iconType}/>
+                <IconFont className="section-icon" iconType={this.props.iconType}/>
                 <span>{this.props.sectionTitle}</span>
                 <span>-</span>
             </div>
