@@ -2,8 +2,13 @@
     width: 100%;
     text-align: center;
 
+    .header-line {
+        // font-size: 1.2rem;
+        font-weight: bolder;
+        color: #999999;
+    }
+
     .section-icon {
-        color: white;
-        background-color: red;
+        margin: 0 5px;
     }
 }

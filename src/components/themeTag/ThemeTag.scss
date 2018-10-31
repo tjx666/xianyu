@@ -4,13 +4,13 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    margin: 5px 0;
 
     .tag-left {
         height: 30px;
         padding: 0 10px;
         border-radius: 7px;
         border-bottom-right-radius: 0;
-        background-color: #F0F;
         text-align: center;
         line-height: 30px;
         color: white;
@@ -34,7 +34,6 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            background-color: #F0F;
            z-index: 0;
         }
 }

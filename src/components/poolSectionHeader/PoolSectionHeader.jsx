@@ -6,17 +6,18 @@ import './PoolSectionHeader.scss'
 export class PoolSectionHeader extends Component {
     static propTypes = {
         iconType: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
+        sectionTitle: PropTypes.string.isRequired,
         iconColor: PropTypes.string.isRequired,
     }
 
     render() {
         return (
             <div className="pool-section-header">
-                <span>-</span>
+                <span className="header-line">——&nbsp;</span>
                 <IconFont className="section-icon" iconType={this.props.iconType}/>
+                &nbsp;
                 <span>{this.props.sectionTitle}</span>
-                <span>-</span>
+                <span className="header-line">&nbsp;——</span>
             </div>
         )
     }
