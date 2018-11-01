@@ -1,0 +1,53 @@
+.goods {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .goods-header {
+        display: flex;
+        justify-content: flex-start;
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        .goods-user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .user-name {
+                color: #666666;
+                font-size: .9rem;
+
+                .user-title {
+                    color: lightskyblue;
+                    font-size: .8rem;
+                }
+            }
+
+            .user-message {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .goods-photos {
+        height: 115px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px;
+        background-color: rgb(247, 246, 246);
+
+        .goods-photo {
+            width: 95px;
+            height: 95px;
+        }
+    }
+}

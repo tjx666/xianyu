@@ -7,7 +7,6 @@ export class PoolSectionHeader extends Component {
     static propTypes = {
         iconType: PropTypes.string.isRequired,
         sectionTitle: PropTypes.string.isRequired,
-        iconColor: PropTypes.string.isRequired,
     }
 
     render() {

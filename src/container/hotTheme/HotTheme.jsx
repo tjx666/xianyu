@@ -41,7 +41,6 @@ export class HotTheme extends Component {
                 <PoolSectionHeader
                     iconType="#icon-huo"
                     sectionTitle="热门主题"
-                    iconColor="red"
                 />
                 <div className="scroll-tags-container">
                     <div ref="scroll-tags" className="scroll-tags" style={{ top: this.state.offsetTop, transition: this.state.hasTransition ? `top 1s` : 'none' }}>{this._renderHotThemes()}</div>

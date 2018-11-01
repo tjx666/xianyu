@@ -1,0 +1,10 @@
+.goods-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .goods-wrapper {
+        width: 90vw;
+    }
+}
