@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './IconFont.scss';
-import '../../common/js/navTabIcon';
+import '../../common/js/iconFont';
 
 const IconFont  = (props) => {
     return (

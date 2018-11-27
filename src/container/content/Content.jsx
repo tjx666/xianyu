@@ -3,6 +3,7 @@ import './Content.scss';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../pages/home/Home';
 import Pool from '../../pages/pool/Pool';
+import MessageList from "../../pages/messageList/MessageList";
 
 export default class Content extends Component {
     render() {
@@ -17,8 +18,12 @@ export default class Content extends Component {
                         path='/pool'
                         component={Pool}
                     />
+                    <Route
+                        path="/message_list"
+                        component={MessageList}
+                    />
                     <Redirect
-                        to="/pool"
+                        to="/message_list"
                     />
                 </Switch>
             </div>
