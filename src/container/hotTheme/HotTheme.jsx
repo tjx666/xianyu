@@ -16,19 +16,19 @@ export class HotTheme extends Component {
     }
 
     componentDidMount() {
-        setInterval(__ => {
-            if (this.state.offsetTop <= -this.refs['scroll-tags'].clientHeight) {
-                this.setState({
-                    hasTransition: false,
-                    offsetTop: 120,
-                });
-            } else {
-                this.setState({
-                    hasTransition: true,
-                    offsetTop: this.state.offsetTop - 120,
-                });
-            }
-        }, 2000);
+        // setInterval(__ => {
+        //     if (this.state.offsetTop <= -this.refs['scroll-tags'].clientHeight) {
+        //         this.setState({
+        //             hasTransition: false,
+        //             offsetTop: 120,
+        //         });
+        //     } else {
+        //         this.setState({
+        //             hasTransition: true,
+        //             offsetTop: this.state.offsetTop - 120,
+        //         });
+        //     }
+        // }, 2000);
     }
 
     _renderHotThemes = __ => this.state.hotThemes.map((theme, index) => (

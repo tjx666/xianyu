@@ -1,0 +1,37 @@
+.feature-list {
+}
+
+.feature-item {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item-left {
+        display: flex;
+        justify-content: flex-start;
+        
+
+        .feature-icon {
+            font-size: 25px;
+            margin-left: 6vw;
+            margin-right: 15px;
+            color: yellow;
+        }
+
+        .feature {
+            font-weight: bold;
+        }
+    }
+
+    .item-right {
+        display: flex;
+        justify-content: space-between;
+
+        .greater-signal {
+            margin-left: 20px;
+            margin-right: 4vw;
+            color: #eeeeee;
+        }
+    }
+}

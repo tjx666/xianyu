@@ -1,10 +1,51 @@
 .message-item {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
+
+    .notice {
+        background-color: rgb(248, 206, 255);
+    }
+
+    .activity-message {
+        background-color: rgb(255, 178, 169);
+    }
 
     .avatar {
-        width: 50px;
-        height: 50px;
+        width: 47px;
+        height: 40px;
+        margin: 0 10px;
         border-radius: 2px;
+    }
+
+    .right {
+        width: stretch;
+        display: flex;
+        flex-direction: column;
+
+        .right-top {
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+
+            .from-where {
+                font-weight: bold;
+                font-size: 16px;
+            }
+    
+            .digest {
+                font-size: 12px;
+                color: gray;
+            }
+        }
+
+        .date {
+            width: 100%;
+            font-size: 10px;
+            padding: 8px 0;
+            text-align: left;
+            color: gray;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.164);
+        }
     }
 }

@@ -1,0 +1,71 @@
+.personal-info {
+    padding: 0 5vw;
+
+    .info-top {
+        padding: 36px 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #6666660e;
+
+        .text-info {
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .nick-name {
+                font-size: 24px;
+                font-weight: bolder;
+            }
+
+            .motto {
+                font-size: 12px;
+                color: gray;
+            }
+        }
+
+        .avatar-container {
+            width: 80px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .avatar {
+                width: 56px;
+                height: 56px;
+            }
+
+            .greater-signal {
+                font-size: 10px;
+                color: rgba(128, 128, 128, 0.37);
+            }
+        }
+    }
+
+    .count-columns {
+        display: flex;
+        align-items: center;
+
+        .count-column {
+            width: 30vw;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .count {
+                font-size: 14px;
+                font-weight: bolder;
+            }
+
+            .type {
+                font-size: 15px;
+                color: #999999;
+            }
+        }
+    }
+}
+
