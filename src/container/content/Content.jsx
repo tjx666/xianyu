@@ -28,9 +28,6 @@ export default class Content extends Component {
                         path="/self"
                         component={Self}
                     />
-                    <Redirect
-                        to="/message_list"
-                    />
                 </Switch>
             </div>
         )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IconFont from '../iconFont/IconFont';
-import PropTypes from 'prop-types';
+import { checkIfLogin } from '../../util/checkLogin';
+
 import './FeatureList.scss';
 
 const FeatureItem = ({ iconType, feature, count }) => (
@@ -12,10 +13,11 @@ const FeatureItem = ({ iconType, feature, count }) => (
             />
             <span className="feature">{feature}</span>
         </div>
+        
         <div className="item-right">
-            <span className="count">{ count }</span>
+            { checkIfLogin() && <span className="count">{ count }</span> }
             <span className="greater-signal">></span>
-        </div>
+           </div>
     </div>
 )
 
@@ -58,8 +60,9 @@ export class FeatureList extends Component {
 
     }
 
-    _renderFeatureList = featureItems => featureItems.map(featureItem => (
+    _renderFeatureList = featureItems => featureItems.map((featureItem, index) => (
         <FeatureItem
+            key={index}
             iconType={featureItem.iconType}
             feature={featureItem.feature}
             count={featureItem.count}

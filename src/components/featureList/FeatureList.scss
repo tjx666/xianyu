@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 6vw;
+    margin-right: 4vw;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.075);
 
     .item-left {
         display: flex;
@@ -14,7 +17,6 @@
 
         .feature-icon {
             font-size: 25px;
-            margin-left: 6vw;
             margin-right: 15px;
             color: yellow;
         }
@@ -30,8 +32,7 @@
 
         .greater-signal {
             margin-left: 20px;
-            margin-right: 4vw;
-            color: #eeeeee;
+            color: #dddddd;
         }
     }
 }

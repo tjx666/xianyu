@@ -26,7 +26,7 @@ class Navbar extends Component {
                     iconType: 'xiaoxi1',
                     selectedIconType: 'xiaoxi',
                     navText: "消息",
-                    navLink: '/message',
+                    navLink: '/message_list',
                     isSelected: false,
                 },
                 {

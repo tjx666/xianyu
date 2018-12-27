@@ -25,6 +25,7 @@ export class PersonalInfo extends Component {
     }
 
     _renderCountColumns = __ => ['超赞', '关注数', '粉丝数'].map((type, index) => <CountColumn
+        key={index}
         count={this.state.countColumns[index]}
         type={type}
     />)
