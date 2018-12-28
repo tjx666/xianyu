@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './GoodsList.scss';
 import Faker from 'faker';
 import Goods from '../../components/goods/Goods';
@@ -25,9 +24,8 @@ export class GoodsList extends Component {
     }
 
     _renderGoodsList = __ => this.state.goodsList.map((goods, index) => (
-        <div className="goods-wrapper">
+        <div className="goods-wrapper" key={index}>
             <Goods
-                key={index}
                 avatarSrc={goods.avatarSrc}
                 username={goods.username}
                 userTitle={goods.userTitle}

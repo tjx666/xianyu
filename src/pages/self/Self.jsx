@@ -17,12 +17,18 @@ export class Self extends Component {
         }
     }
 
+    handleLoginOut = __ => {
+        localStorage.removeItem("isLogin");
+        window.location.href = "http://localhost:3000/self";
+    }
+
     render() {
         return (
             <div className="self">
                 { this.state.isLogin ? <PersonInfo/> : <LoginCard/>}
                 <DivideLine/>
                 <FeatureList/>
+                <div className="login-out" onClick={this.handleLoginOut}>退出登入</div>
             </div>
         )
     }

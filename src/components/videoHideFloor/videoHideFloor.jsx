@@ -13,7 +13,7 @@ export class videoHideFloor extends Component {
     static propTypes = {
         width: PropTypes.number,
         height: PropTypes.number,
-        borderRadius: PropTypes.radius,
+        borderRadius: PropTypes.number,
     }
 
     constructor(props) {
@@ -69,11 +69,11 @@ export class videoHideFloor extends Component {
             bottomPoint.x = topPoint.x;
             bottomPoint.y = this.props.height / 2 + slideLength / 2;
 
-            console.log({
-                topPoint,
-                middlePoint,
-                bottomPoint
-            });
+            // console.log({
+            //     topPoint,
+            //     middlePoint,
+            //     bottomPoint
+            // });
 
             ctx.beginPath();
             ctx.moveTo(topPoint.x, topPoint.y);

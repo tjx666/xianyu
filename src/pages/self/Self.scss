@@ -1,2 +1,16 @@
 .self {
+
+    .login-out {
+        margin: 40px auto 0;
+        width: 100px;
+        height: 36px;
+        border-radius: 5px;
+        background-color: rgba(250, 217, 85, 0.466);
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .login-out:hover {
+        background-color: red;
+    }
 }

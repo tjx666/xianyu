@@ -1,0 +1,40 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    padding-top: 70px;
+
+    .input-container {
+        width: 90vw;
+        margin: 5px 0;
+        border-bottom: 1px solid rgb(250, 217, 85);
+
+        .input-icon {
+            font-size: 1.6rem;
+        }
+
+        input {
+            display: inline-block;
+            width: 60vw;
+            height: 30px;
+            margin-left: 20px;
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .register-button {
+        width: 100px;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 10px;
+        background-color: rgb(250, 217, 85);
+        line-height: 40px;
+        text-align: center;
+    }
+}
