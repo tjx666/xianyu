@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
 import './Content.scss';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from '../../pages/home/Home';
-import Pool from '../../pages/pool/Pool';
-import MessageList from '../../pages/messageList/MessageList';
-import Self from '../../pages/self/Self';
 
+import React, { Component } from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
+
+import Home from '../../pages/home/Home';
+import MessageList from '../../pages/messageList/MessageList';
+import My from '../../pages/my/My';
+import Pool from '../../pages/pool/Pool';
 
 export default class Content extends Component {
     render() {
@@ -25,8 +26,8 @@ export default class Content extends Component {
                         component={MessageList}
                     />
                     <Route
-                        path="/self"
-                        component={Self}
+                        path="/my"
+                        component={My}
                     />
                 </Switch>
             </div>

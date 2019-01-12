@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import IconFont from '../iconFont/IconFont';
 import PropTypes from 'prop-types';
-import './navCard2Item.scss';
+import './IdleGoodsItem.scss';
 
-export class NavCard2Item extends Component {
+export class IdleGoodsItem extends Component {
     static propTypes = {
         iconType: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
@@ -27,4 +27,4 @@ export class NavCard2Item extends Component {
     }
 }
 
-export default NavCard2Item;
+export default IdleGoodsItem;

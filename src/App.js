@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Content from './containers/content/Content';
-import Navbar from './containers/navbar/Navbar';
+import Menu from './containers/menu/Menu';
 import LoginPage from './pages/login/Login';
 import RegisterPage from './pages/register/Register';
 import './App.scss';
@@ -10,7 +10,7 @@ import './App.scss';
 const Main = __ => (
     <div className="main">
         <Content />
-        <Navbar />
+        <Menu />
     </div>
 );
 
