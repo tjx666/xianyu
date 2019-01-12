@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import strokeRadiusRect from '../../util/strokeRadiusRect';
 import './VideoHideFloor.scss';
@@ -22,7 +22,7 @@ export class videoHideFloor extends Component {
         this.state = {
             circleRadius: 26,
             triangleSlideLength: 20,
-        }
+        };
     }
 
 
@@ -43,7 +43,7 @@ export class videoHideFloor extends Component {
             ctx.fillStyle = 'rgba(50, 50, 50, 0.2)';
             strokeRadiusRect(ctx, 0, 0, this.props.width, this.props.height, this.props.borderRadius);
             ctx.fill();
-        }
+        };
 
         // draw circle
         const drawCircle = __ => {
@@ -52,7 +52,7 @@ export class videoHideFloor extends Component {
             ctx.fillStyle = 'rgba(50, 50, 50, 0.3)';
             ctx.arc(this.props.width / 2, this.props.height / 2, circleRadius, 0, 2 * Math.PI);
             ctx.fill();
-        }
+        };
 
         // draw triangle
         const drawTriangle = __ => {
@@ -63,7 +63,7 @@ export class videoHideFloor extends Component {
 
             const middlePoint = {};
             middlePoint.x = this.props.width / 2 + (slideLength / 2 * Math.sqrt(3) / 2);
-            middlePoint.y = this.props.height / 2
+            middlePoint.y = this.props.height / 2;
 
             const bottomPoint = {};
             bottomPoint.x = topPoint.x;
@@ -82,16 +82,16 @@ export class videoHideFloor extends Component {
             ctx.closePath();
             ctx.lineCap = 'round';
             ctx.lineWidth = 2;
-            ctx.strokeStyle = '#FFF'
+            ctx.strokeStyle = '#FFF';
             ctx.fillStyle = '#FFF';
             ctx.stroke();
             ctx.fill();
-        }
+        };
 
         const draw = __ =>  {
             fillRadiusRect();
             drawCircle();
-            drawTriangle()
+            drawTriangle();
         };
 
         draw();
@@ -101,8 +101,8 @@ export class videoHideFloor extends Component {
     render() {
         return (
             <canvas className="video-hide-floor" ref="videoHideFloor" width={this.props.width} height={this.props.height}></canvas>
-        )
+        );
     }
 }
 
-export default videoHideFloor
+export default videoHideFloor;

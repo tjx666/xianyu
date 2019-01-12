@@ -8,16 +8,16 @@ export class ThemeTag extends Component {
     }
 
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             randomBGColor:  this._computeRandomColor()
-        }
+        };
     }
 
     _computeRandomColor() {
-        const randomColor = `#${ Array.from({ length: 3 }).map(__ => Math.random() > 0.5 ? "0" : "E").join('')}`;
-        return randomColor === "#EEE" ? "#E0E" : randomColor;
+        const randomColor = `#${ Array.from({ length: 3 }).map(__ => Math.random() > 0.5 ? '0' : 'E').join('')}`;
+        return randomColor === '#EEE' ? '#E0E' : randomColor;
     }
 
     render() {
@@ -27,8 +27,8 @@ export class ThemeTag extends Component {
                 <div className="tag-right"></div>
                 <div className="tag-right-bottom" style={{ backgroundColor: this.state.randomBGColor }}></div>
             </div>
-        )
+        );
     }
 }
 
-export default ThemeTag
+export default ThemeTag;

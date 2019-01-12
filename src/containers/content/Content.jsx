@@ -3,7 +3,7 @@ import './Content.scss';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../../pages/home/Home';
 import Pool from '../../pages/pool/Pool';
-import MessageList from "../../pages/messageList/MessageList";
+import MessageList from '../../pages/messageList/MessageList';
 import Self from '../../pages/self/Self';
 
 
@@ -30,6 +30,6 @@ export default class Content extends Component {
                     />
                 </Switch>
             </div>
-        )
+        );
     }
 }

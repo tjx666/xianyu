@@ -12,7 +12,7 @@ export class HotTheme extends Component {
             hotThemes: Array.from({ length: 12 }).map(__ => faker.name.lastName()),
             offsetTop: 0,
             hasTransition: true,
-        }
+        };
     }
 
     componentDidMount() {
@@ -43,14 +43,14 @@ export class HotTheme extends Component {
                     sectionTitle="热门主题"
                 />
                 <div className="scroll-tags-container">
-                    <div ref="scroll-tags" className="scroll-tags" style={{ top: this.state.offsetTop, transition: this.state.hasTransition ? `top 1s` : 'none' }}>{this._renderHotThemes()}</div>
+                    <div ref="scroll-tags" className="scroll-tags" style={{ top: this.state.offsetTop, transition: this.state.hasTransition ? 'top 1s' : 'none' }}>{this._renderHotThemes()}</div>
                 </div>
                 <div className="hot-theme-footer">
                     <span className="see-more">查看更多></span>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default HotTheme
+export default HotTheme;

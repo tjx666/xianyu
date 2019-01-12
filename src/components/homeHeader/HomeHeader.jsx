@@ -13,6 +13,6 @@ export default class HomeHeader extends Component {
                 </div>
                 <IconFont className="scan-code-icon" iconType="#icon-saoma" />
             </header>
-        )
+        );
     }
 }

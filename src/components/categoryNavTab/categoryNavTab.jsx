@@ -40,8 +40,8 @@ export class categoryNavTab extends Component {
             >
                 {this.props.category}
             </div>
-        )
+        );
     }
 }
 
-export default categoryNavTab
+export default categoryNavTab;

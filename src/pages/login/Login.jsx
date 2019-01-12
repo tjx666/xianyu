@@ -5,7 +5,7 @@ import IconFont from '../../components/iconFont/IconFont';
 import axios from 'axios';
 
 import './Login.scss';
-import loginImageTitleSrc from '../../common/image/login-title.png';
+import loginImageTitleSrc from '../../assets/image/login-title.png';
 
 export class Login extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ export class Login extends Component {
         this.state = {
             id: '',
             password: '',
-        }
+        };
     }
 
     handleInput = (name, event) => {
@@ -38,15 +38,15 @@ export class Login extends Component {
         const postData = {
             id: this.state.id,
             password: this.state.password
-        }
+        };
 
         axios
             .post('http://localhost:8080/login', postData)
             .then(function (response) {
                 if (response.data.code === 1) {
-                    localStorage.setItem("isLogin", true);
+                    localStorage.setItem('isLogin', true);
                     alert('登入成功');
-                    window.location.href = "http://localhost:3000/index"
+                    window.location.href = 'http://localhost:3000/index';
                 }
             })
             .catch(function (error) {
@@ -75,8 +75,8 @@ export class Login extends Component {
                 <div className="login-button" onClick={this.handleLogin}>登入</div>
                 <Link className="register-notice" to="/register">注册新账号</Link>
             </div>
-        )
+        );
     }
 }
 
-export default Login
+export default Login;

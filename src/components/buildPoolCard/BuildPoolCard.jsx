@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import builtPoolImage from '../../common/image/built-pool.png';
+import builtPoolImage from '../../assets/image/built-pool.png';
 import './BuildPoolCard.scss';
 
 export class BuildPoolCard extends Component {
@@ -8,8 +8,8 @@ export class BuildPoolCard extends Component {
             <img className="build-pool-card" src={builtPoolImage} alt="建鱼塘入口">
 
             </img>
-        )
+        );
     }
 }
 
-export default BuildPoolCard
+export default BuildPoolCard;

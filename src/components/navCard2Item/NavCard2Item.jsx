@@ -23,8 +23,8 @@ export class NavCard2Item extends Component {
                 </div>
                 <span className="item2-subtitle">{this.props.subtitle}</span>
             </div>
-        )
+        );
     }
 }
 
-export default NavCard2Item
+export default NavCard2Item;

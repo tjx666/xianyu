@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import IconFont from '../iconFont/IconFont';
-import './PoolSectionHeader.scss'
+import './PoolSectionHeader.scss';
 
 export class PoolSectionHeader extends Component {
     static propTypes = {
@@ -18,7 +18,7 @@ export class PoolSectionHeader extends Component {
                 <span>{this.props.sectionTitle}</span>
                 <span className="header-line">&nbsp;——</span>
             </div>
-        )
+        );
     }
 }
 

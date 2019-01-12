@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './LoginCard.scss';
-import imgSrc from '../../common/image/login.png';
+import imgSrc from '../../assets/image/login.png';
 
 export class LoginCard extends Component {
     render() {
@@ -16,8 +16,8 @@ export class LoginCard extends Component {
                 </div>
                 <img className="login-animate" src={imgSrc} alt="动画" />
             </div>
-        )
+        );
     }
 }
 
-export default LoginCard
+export default LoginCard;

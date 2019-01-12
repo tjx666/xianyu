@@ -60,8 +60,8 @@ export class NavCard1 extends Component {
                     imageSrc={item.imageSrc}
                     imageAlt={item.imageAlt}
                 />
-            )
-        })
+            );
+        });
     }
 
     render() {
@@ -69,8 +69,8 @@ export class NavCard1 extends Component {
             <div className="nav-card1">
                 {this._renderItems()}
             </div>
-        )
+        );
     }
 }
 
-export default NavCard1
+export default NavCard1;

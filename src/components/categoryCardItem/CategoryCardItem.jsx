@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import IconFont from '../iconFont/IconFont';
-import './CategoryCardItem.scss'
+import './CategoryCardItem.scss';
 
 
 export default class CategoryCardItem extends Component {
@@ -14,7 +14,7 @@ export default class CategoryCardItem extends Component {
 
     this.state = {
       iconType: ''
-    }
+    };
   }
 
   render() {
@@ -23,6 +23,6 @@ export default class CategoryCardItem extends Component {
         <IconFont iconType={this.props.iconType} />
         <span className="icon-text">{this.props.category}</span>
       </div>
-    )
+    );
   }
 }

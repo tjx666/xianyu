@@ -4,40 +4,40 @@ import NavTab from '../navTab/NavTab';
 
 class Navbar extends Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             navTabs: [
                 {
                     iconType: 'shouye',
                     selectedIconType: 'shouye1',
-                    navText: "咸鱼",
+                    navText: '咸鱼',
                     navLink: '/index',
                     isSelected: true,
                 },
                 {
                     iconType: 'dayongchi',
                     selectedIconType: 'dayongchi1',
-                    navText: "鱼塘",
+                    navText: '鱼塘',
                     navLink: '/pool',
                     isSelected: false,
                 },
                 {
                     iconType: 'xiaoxi1',
                     selectedIconType: 'xiaoxi',
-                    navText: "消息",
+                    navText: '消息',
                     navLink: '/message_list',
                     isSelected: false,
                 },
                 {
                     iconType: 'geren',
                     selectedIconType: 'iconzhengli-',
-                    navText: "我的",
+                    navText: '我的',
                     navLink: '/self',
                     isSelected: false,
                 },
             ]
-        }
+        };
     }
 
     handleSelect = (navText, event) => {
@@ -72,7 +72,7 @@ class Navbar extends Component {
             <div className="navbar">
                 {this._renderTabs()}
             </div>
-        )
+        );
     }
 }
 

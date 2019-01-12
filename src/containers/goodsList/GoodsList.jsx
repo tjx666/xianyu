@@ -10,17 +10,17 @@ export class GoodsList extends Component {
     }
 
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             goodsList: Array.from({ length: 5 }).map(__ => ({
                 avatarSrc: Faker.image.avatar(),
                 username: Faker.name.findName(),
-                userTitle: "塘主",
-                userMessage: "我的鱼塘上新了宝贝",
+                userTitle: '塘主',
+                userMessage: '我的鱼塘上新了宝贝',
                 photos: Array.from({ length: 3 }).map(__ => Faker.image.avatar())
             })),
-        }
+        };
     }
 
     _renderGoodsList = __ => this.state.goodsList.map((goods, index) => (
@@ -42,8 +42,8 @@ export class GoodsList extends Component {
             <div className="goods-list">
                 {this._renderGoodsList()}
             </div>
-        )
+        );
     }
 }
 
-export default GoodsList
+export default GoodsList;

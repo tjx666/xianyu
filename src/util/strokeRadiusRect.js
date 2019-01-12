@@ -8,4 +8,4 @@ module.exports = function strokeRadiusRect(ctx, x, y, w, h, r) {
     ctx.arcTo(x, y + h, x, y, r);
     ctx.arcTo(x, y, x + w, y, r);
     ctx.closePath();
-}
+};

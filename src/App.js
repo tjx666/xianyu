@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Content from './container/content/Content';
-import Navbar from './container/navbar/Navbar';
+import Content from './containers/content/Content';
+import Navbar from './containers/navbar/Navbar';
 import LoginPage from './pages/login/Login';
 import RegisterPage from './pages/register/Register';
 import './App.scss';
@@ -12,7 +12,7 @@ const Main = __ => (
         <Content />
         <Navbar />
     </div>
-)
+);
 
 class App extends Component {
     render() {

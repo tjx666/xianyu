@@ -125,7 +125,7 @@ export class ProductList extends Component {
                     sesameCredit: '差'
                 },
             ]
-        }
+        };
     }
 
     _renderProductList =  productList => productList.map(product => (
@@ -148,8 +148,8 @@ export class ProductList extends Component {
                 <div className="left-product-list">{this._renderProductList(this.state.leftProductList)}</div>
                 <div className="right-product-list">{this._renderProductList(this.state.rightProductList)}</div>
             </div>
-        )
+        );
     }
 }
 
-export default ProductList
+export default ProductList;

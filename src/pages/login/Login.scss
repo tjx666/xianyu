@@ -42,13 +42,13 @@
         height: 36px;
         margin-top: 25px;
         border-radius: 100px;
-        background: linear-gradient(left, rgb(250, 217, 85), orange 30%);
+        background: linear-gradient(to-left, rgb(250, 217, 85), orange 30%);
         line-height: 36px;
         text-align: center;
     }
 
     .login-button:hover {
-        background: linear-gradient(left, orange,  rgb(250, 217, 85) 20%);
+        background: linear-gradient(to-left, orange,  rgb(250, 217, 85) 20%);
     }
 
     .register-notice {

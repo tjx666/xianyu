@@ -7,6 +7,6 @@ export default class PoolSearchBox extends Component {
       <div className="search-box">
         
       </div>
-    )
+    );
   }
 }

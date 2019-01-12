@@ -19,7 +19,7 @@ const FeatureItem = ({ iconType, feature, count }) => (
             <span className="greater-signal">></span>
            </div>
     </div>
-)
+);
 
 export class FeatureList extends Component {
     static propTypes = {
@@ -56,7 +56,7 @@ export class FeatureList extends Component {
                     count: 2000
                 }
             ]
-        }
+        };
 
     }
 
@@ -74,7 +74,7 @@ export class FeatureList extends Component {
             <div className="feature-list">
                 {this._renderFeatureList(this.state.featureItems)}
             </div>
-        )
+        );
     }
 }
 

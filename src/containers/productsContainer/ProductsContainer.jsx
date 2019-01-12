@@ -15,8 +15,8 @@ export class ProductsContainer extends Component {
                 <CategoryNavbar/>
                 <ProductList/>
             </div>
-        )
+        );
     }
 }
 
-export default ProductsContainer
+export default ProductsContainer;

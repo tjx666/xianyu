@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import HomeHeader from '../../components/homeHeader/HomeHeader';
-import CategoryCard from '../../container/categoryCard/CategoryCard';
-import NavCard1 from '../../container/navCard1/NavCard1';
-import NavCard2 from '../../container/navCard2/NavCard2';
-import ProductsContainer from '../../container/productsContainer/ProductsContainer';
-import './Home.scss'
+import CategoryCard from '../../containers/categoryCard/CategoryCard';
+import NavCard1 from '../../containers/navCard1/NavCard1';
+import NavCard2 from '../../containers/navCard2/NavCard2';
+import ProductsContainer from '../../containers/productsContainer/ProductsContainer';
+import './Home.scss';
 
 export default class Home extends Component {
     render() {
@@ -16,6 +16,6 @@ export default class Home extends Component {
                 <NavCard2/>
                 <ProductsContainer/>
             </div>
-        )
+        );
     }
 }

@@ -4,7 +4,7 @@ import './CategoryCard.scss';
 
 export default class CategoryCard extends Component {
     constructor(props) {
-      super(props)
+      super(props);
     
       this.state = {
          categoryItems: [
@@ -49,7 +49,7 @@ export default class CategoryCard extends Component {
                 category: '全部分类'
              },         
         ]
-      }
+      };
     }
     
     _renderCategoryList = __ => this.state.categoryItems.map(item => (
@@ -65,6 +65,6 @@ export default class CategoryCard extends Component {
             <div className="category-card">
                 {this._renderCategoryList()}
             </div>
-        )
+        );
     }
 }

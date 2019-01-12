@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import IconFont from '../iconFont/IconFont'
+import IconFont from '../iconFont/IconFont';
 import './MessageItem.scss';
 
 export class MessageItem extends Component {
@@ -22,11 +22,11 @@ export class MessageItem extends Component {
                             iconType={this.props.avatarSrc}
                             className={
                                 `avatar ${
-                                this.props.messageType === "notice"
-                                    ? "notice"
-                                    : this.props.messageType === "activity-message"
-                                        ? "activity-message"
-                                        : ""
+                                this.props.messageType === 'notice'
+                                    ? 'notice'
+                                    : this.props.messageType === 'activity-message'
+                                        ? 'activity-message'
+                                        : ''
                                 }`
                             }
                         />
@@ -41,7 +41,7 @@ export class MessageItem extends Component {
                     <div className="date">{this.props.date}</div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

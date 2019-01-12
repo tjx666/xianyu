@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import SearchPoolBox from '../../components/searchPoolBox/searchPoolBox';
 import BuildPoolCard from '../../components/buildPoolCard/BuildPoolCard';
-import HotTheme from '../../container/hotTheme/HotTheme';
+import HotTheme from '../../containers/hotTheme/HotTheme';
 import DivideLine from '../../components/divideLine/DivideLine';
 import PoolSectionHeader from '../../components/poolSectionHeader/PoolSectionHeader';
-import GoodsList from '../../container/goodsList/GoodsList';
+import GoodsList from '../../containers/goodsList/GoodsList';
 import './Pool.scss';
 
 export class Pool extends Component {
@@ -27,8 +27,8 @@ export class Pool extends Component {
                     <GoodsList/>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Pool
+export default Pool;

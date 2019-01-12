@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CategoryNavTab from '../categoryNavTab/categoryNavTab';
 import PropTypes from 'prop-types';
-import './CategoryNavBar.scss'
+import './CategoryNavBar.scss';
 
 export class CategoryNavBar extends Component {
     static propTypes = {
@@ -82,7 +82,7 @@ export class CategoryNavBar extends Component {
             } else {
                 tab.isSelected = false;
             }
-        })
+        });
 
         this.setState({
             updatePath: CategoryNavBar.updatePaths.SELECT_CATEGORY,
@@ -145,8 +145,8 @@ export class CategoryNavBar extends Component {
             >
                 {this._renderCategories()}
             </div>
-        )
+        );
     }
 }
 
-export default CategoryNavBar
+export default CategoryNavBar;

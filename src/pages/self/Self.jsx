@@ -6,7 +6,7 @@ import DivideLine from '../../components/divideLine/DivideLine';
 import FeatureList from '../../components/featureList/FeatureList';
 import { checkIfLogin } from '../../util/checkLogin';
 
-import './Self.scss'
+import './Self.scss';
 
 export class Self extends Component {
     constructor(props) {
@@ -14,12 +14,12 @@ export class Self extends Component {
 
         this.state = {
             isLogin: checkIfLogin()
-        }
+        };
     }
 
     handleLoginOut = __ => {
-        localStorage.removeItem("isLogin");
-        window.location.href = "http://localhost:3000/self";
+        localStorage.removeItem('isLogin');
+        window.location.href = 'http://localhost:3000/self';
     }
 
     render() {
@@ -30,7 +30,7 @@ export class Self extends Component {
                 <FeatureList/>
                 <div className="login-out" onClick={this.handleLoginOut}>退出登入</div>
             </div>
-        )
+        );
     }
 }
 

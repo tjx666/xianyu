@@ -30,7 +30,7 @@ export class Goods extends Component {
                 </div>
                 <div className="goods-footer"></div>
             </div>
-        )
+        );
     }
 }
 

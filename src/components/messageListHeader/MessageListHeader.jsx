@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import IconFont from '../iconFont/IconFont';
-import './MessageListHeader.scss'
+import './MessageListHeader.scss';
 
 export class MessageListHeader extends Component {
   static propTypes = {
@@ -17,8 +16,8 @@ export class MessageListHeader extends Component {
                 className="help"
             />
       </div>
-    )
+    );
   }
 }
 
-export default MessageListHeader
+export default MessageListHeader;

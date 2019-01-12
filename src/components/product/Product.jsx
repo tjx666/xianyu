@@ -37,8 +37,8 @@ export class Product extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Product
+export default Product;

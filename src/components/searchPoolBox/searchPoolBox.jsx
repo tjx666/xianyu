@@ -12,8 +12,8 @@ export class searchPoolBox extends Component {
                 />
                 <span className="placeholder">搜索你感兴趣的鱼塘</span>
             </div>
-        )
+        );
     }
 }
 
-export default searchPoolBox
+export default searchPoolBox;

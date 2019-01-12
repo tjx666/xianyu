@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import IconFont from '../../components/iconFont/IconFont';
@@ -28,7 +28,7 @@ class NavTab extends Component {
                     <span className="nav-text">{this.props.navText}</span>
                 </NavLink>
             </div>
-        )
+        );
     }
 }
 

@@ -16,16 +16,16 @@ export class NavCard1Item extends Component {
     }
 
     constructor(props) {
-      super(props)
+      super(props);
     
       this.state = {
          imageSrc: this.props.imageSrc
-      }
+      };
     }
     
     
     render() {
-        const imageSrc = require(`../../common/image/${this.props.imageSrc}`);
+        const imageSrc = require(`../../assets/image/${this.props.imageSrc}`);
         let borderStyle = {};
         if (this.props.isBottomBorder) {
             borderStyle.borderBottom= '1px solid #EEE';
@@ -48,7 +48,7 @@ export class NavCard1Item extends Component {
                 </div>
                 <img className="item1-right" src={imageSrc} alt={this.props.imageAlt} />
             </div>
-        )
+        );
     }
 }
 

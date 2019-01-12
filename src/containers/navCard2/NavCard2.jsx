@@ -27,7 +27,7 @@ export class NavCard2 extends Component {
                     titleColor: 'rgb(250, 95, 58)',
                 }
             ]
-        }
+        };
     }
 
     _renderItems = __ => this.state.items.map(item => (
@@ -51,8 +51,8 @@ export class NavCard2 extends Component {
                     {this._renderItems()}
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default NavCard2
+export default NavCard2;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './Register.scss'
+import './Register.scss';
 
 export class Register extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export class Register extends Component {
             username: '',
             password: '',
             repeatPassword: ''
-        }
+        };
     }
 
     handleInput = (name, event) => {
@@ -53,9 +53,9 @@ export class Register extends Component {
             .post('http://localhost:8080/users', postData)
             .then(function (response) {
                 if (response.data.code === 1) {
-                    localStorage.setItem("isLogin", true);
+                    localStorage.setItem('isLogin', true);
                     alert('注册成功');
-                    window.location.href = "http://localhost:3000/index"
+                    window.location.href = 'http://localhost:3000/index';
                 }
             })
             .catch(function (error) {
@@ -80,7 +80,7 @@ export class Register extends Component {
                 </div>
                 <div className="register-button" onClick={this.handleSubmit}>注册</div>
             </div>
-        )
+        );
     }
 }
 

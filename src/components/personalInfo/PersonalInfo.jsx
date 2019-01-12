@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './PersonalInfo.scss';
-import avatar from '../../common/image/avatar.jpg';
+import avatar from '../../assets/image/avatar.jpg';
 
 const CountColumn = ({ count, type }) => (
     <div className="count-column">
         <span className="count">{count}</span>
         <span className="type">{type}</span>
     </div>
-)
+);
 
 export class PersonalInfo extends Component {
     static propTypes = {
@@ -18,10 +18,10 @@ export class PersonalInfo extends Component {
         super(props);
 
         this.state = {
-            nickName: "年轻不读书",
+            nickName: '年轻不读书',
             countColumns: [666, 999, 500000],
-            avatarSrc: "/common/image/avatar.jpg"
-        }
+            avatarSrc: '/assets/image/avatar.jpg',
+        };
     }
 
     _renderCountColumns = __ => ['超赞', '关注数', '粉丝数'].map((type, index) => <CountColumn
@@ -36,7 +36,7 @@ export class PersonalInfo extends Component {
                 <div className="info-top">
                     <div className="text-info">
                         <span className="nick-name">{this.state.nickName}</span>
-                        <span className="motto">{"虽然没挣到钱，但是在闲鱼开心就好"}</span>
+                        <span className="motto">{'虽然没挣到钱，但是在闲鱼开心就好'}</span>
                     </div>
                     <div className="avatar-container">
                         <img src={avatar} alt="头像" className="avatar" />
@@ -45,7 +45,7 @@ export class PersonalInfo extends Component {
                 </div>
                 <div className="count-columns"> {this._renderCountColumns()} </div>
             </div>
-        )
+        );
     }
 }
 
