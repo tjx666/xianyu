@@ -26,20 +26,20 @@
 
 ### 首页
 
-![index:](https://github.com/tjx666/xianyu/blob/master/screenshot/index.png?raw=true)
+![index:](https://github.com/tjx666/xianyu/blob/master/screenshots/index.png?raw=true)
 
 ### 鱼塘
 
-![pool:](https://github.com/tjx666/xianyu/blob/master/screenshot/pool.png?raw=true)
+![pool:](https://github.com/tjx666/xianyu/blob/master/screenshots/pool.png?raw=true)
 
 ### 消息页
 
-![message:](https://github.com/tjx666/xianyu/blob/master/screenshot/message.png?raw=true)
+![message:](https://github.com/tjx666/xianyu/blob/master/screenshots/message.png?raw=true)
 
 ### 个人中心
 
-![self:](https://github.com/tjx666/xianyu/blob/master/screenshot/self.png?raw=true)
+![self:](https://github.com/tjx666/xianyu/blob/master/screenshots/self.png?raw=true)
 
 ### 登入页
 
-![login:](https://github.com/tjx666/xianyu/blob/master/screenshot/login.png?raw=true)
+![login:](https://github.com/tjx666/xianyu/blob/master/screenshots/login.png?raw=true)
