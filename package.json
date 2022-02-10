@@ -51,7 +51,7 @@
   "devDependencies": {
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
